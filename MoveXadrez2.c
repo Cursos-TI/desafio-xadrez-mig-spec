@@ -6,8 +6,8 @@ int main(){
         printf("Torre: Direita...\n");
     }
 
-    //Variável do bispo e rainha
-    int bispo = 1, rainha = 1;
+    //Variável do bispo, rainha e cavalo
+    int bispo = 1, rainha = 1, cavalo = 1; 
 
     printf("\n");
     
@@ -26,6 +26,15 @@ int main(){
         printf("Rainha: Esquerda...\n");
         rainha++;
     } while (rainha <= 8);
-    
+
+    //Loop do Cavalo
+    while (cavalo--)
+    {
+        for (int l = 1; l <= 2; l++) {
+            printf("Cavalo: Baixo...\n");
+        }
+        printf("Cavalo: Esquerda...\n");
+    }
+
     return 0;
 }
